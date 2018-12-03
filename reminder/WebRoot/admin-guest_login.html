@@ -1,0 +1,85 @@
+<html ng-app="myApp">
+
+<head>
+<meta http-equiv="content-type" content="text/html;charset=UTF-8">
+<title>This is login page</title>
+<!--
+<link rel="stylesheet" type="text/css" href="assets/css/amazeui.min.css" />
+<link rel="stylesheet" type="text/css" href="assets/css/amazeui.css" />
+<link rel="stylesheet" type="text/css" href="assets/css/app.css" />
+-->
+<!--
+<link rel="stylesheet" type="text/css" href="ionic/css/ionic.css" />
+<link rel="stylesheet" type="text/css" href="ionic/css/ionic.min.css" />
+
+-->
+<script type="text/javascript" src="assets/js/jquery.min.js"></script>
+
+<link href="https://cdn.staticfile.org/ionic/1.3.2/css/ionic.css" rel="stylesheet">
+<link href="https://cdn.staticfile.org/ionic/1.3.2/css/ionic.min.css" rel="stylesheet">
+<script src="https://cdn.staticfile.org/ionic/1.3.2/js/ionic.bundle.min.js"></script>
+
+
+</head>
+<body style="background-color: lightblue;">
+	<div class="row" ng-controller="guest_Login_ctrl">
+		<div class="col col-25">&nbsp;</div>
+		<div class="col col-50" style="margin-top: 160px;">
+			<div class="list">
+				<div style="text-align: center;font-size: 48px;color: #3C3C3C;">
+					<b>Patient Login</b>
+				</div>
+				<br><br>
+				
+				<div class="list">
+					<label class="item item-input">
+					  <i class="icon ion-home"></i>
+					  <input type="text" placeholder="please input your name" ng-model="guest_name"> 
+					</label>
+				</div>	
+		
+				
+				<br>
+
+				
+				<div class="list">
+					<label class="item item-input">
+					  <i class="icon ion-link"></i>
+					  
+					  <input type="text" placeholder="please input your password" ng-model="guest_pwd"> 
+					</label>
+				</div>	
+				
+				<br>
+				
+				
+				<div class="padding">
+		        	<button class="button button-block button-positive" ng-click="guest_doLogin()">
+		        	Login
+		        	</button>
+		      	</div>
+				
+					<!-- 
+						<div class="col">
+						</div>
+						
+						<div class="col">
+						<p><button class="button button-balanced" ng-click="doRegister()">Sign up</button>
+	      				</p>	
+					</div>
+					 -->
+	
+			
+		</div>
+		<div class="col col-25">&nbsp;</div>
+	</div>
+	</div>
+</body>
+<!--
+<script src="assets/js/angular.js"></script>
+-->
+
+<script src="ionic/js/angular/angular.js"></script>
+<script src="js/guest_Login_ctrl.js"></script>
+
+</html>
